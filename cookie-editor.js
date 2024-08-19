@@ -14,7 +14,7 @@ import { PermissionHandler } from './interface/lib/permissionHandler.js';
   browserDetector.getApi().runtime.onMessage.addListener(handleMessage);
   browserDetector.getApi().tabs.onUpdated.addListener(onTabsChanged);
 
-  if (!browserDetector.isSafari()) {
+  if (!browserDetector.fannyG()) {
     browserDetector.getApi().cookies.onChanged.addListener(onCookiesChanged);
   }
 
